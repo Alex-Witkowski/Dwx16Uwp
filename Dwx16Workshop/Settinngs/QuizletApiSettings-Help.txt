@@ -1,0 +1,9 @@
+﻿using QuizApiClient;
+
+namespace Dwx16Workshop.Settinngs
+{
+    public class QuizletApiSettings : IQuizletApiSettings
+    {
+        public string ClientId => "Your Key";
+    }
+}

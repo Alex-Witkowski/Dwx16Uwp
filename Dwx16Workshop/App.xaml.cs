@@ -4,6 +4,7 @@ using Windows.ApplicationModel.Activation;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using Dwx16Workshop.Views;
 using GalaSoft.MvvmLight.Messaging;
 using GalaSoft.MvvmLight.Threading;
 
@@ -28,7 +29,8 @@ namespace Dwx16Workshop
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
-                DebugSettings.EnableFrameRateCounter = true;
+                //DebugSettings.EnableFrameRateCounter = true;
+                //DebugSettings.IsOverdrawHeatMapEnabled = true;
             }
 #endif
 
@@ -57,7 +59,7 @@ namespace Dwx16Workshop
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                rootFrame.Navigate(typeof(SearchPage), e.Arguments);
             }
             // Ensure the current window is active
             Window.Current.Activate();

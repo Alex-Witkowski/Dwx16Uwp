@@ -1,6 +1,9 @@
 ﻿using Windows.UI.Core;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Navigation;
+using Dwx16Workshop.Model;
 using Dwx16Workshop.ViewModel;
+using Microsoft.Practices.ServiceLocation;
 
 namespace Dwx16Workshop
 {
@@ -11,6 +14,7 @@ namespace Dwx16Workshop
         public MainPage()
         {
             InitializeComponent();
+            
 
             SystemNavigationManager.GetForCurrentView().BackRequested += SystemNavigationManagerBackRequested;
 

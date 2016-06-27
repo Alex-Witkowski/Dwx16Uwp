@@ -30,6 +30,7 @@
                     Margin="0,0,0,20"
                     FontSize="24"
                     Command="{Binding IncrementCommand, Mode=OneWay}"
+                    CommandParameter="42"
                     Foreground="White" />
 
             <TextBlock Text="Navigate to page 2"
